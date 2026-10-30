@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Naturaleza - Agua, Humedales y Paisaje | Ibicuy</title>
+    <meta name="description" content="Un pueblo rodeado de agua y naturaleza. El territorio de Ibicuy está marcado por los cursos de agua, los ambientes ribereños, los humedales y un paisaje donde naturaleza y comunidad conviven.">
+
+    <!-- Favicons adaptados a todos los dispositivos y tamaños -->
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../imgs/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../imgs/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../imgs/favicon-512x512.png">
+    <link rel="icon" type="image/png" href="../imgs/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3 & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body>
+    <!-- ==========================================================================
+         HEADER / NAVBAR
+         ========================================================================== -->
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <!-- Logo oficial de Municipio de Ibicuy -->
+          <a class="navbar-brand brand-wrapper" href="../index.html" id="nav-brand">
+            <img src="../imgs/logo_modelo_gris.png" alt="Municipio de Ibicuy - Provincia de Entre Ríos" class="site-header-logo">
+          </a>
+
+          <!-- Botón hamburguesa para responsive -->
+          <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIbicuy" aria-controls="navbarIbicuy" aria-expanded="false" aria-label="Abrir navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú de navegación -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarIbicuy">
+            <ul class="navbar-nav align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="../index.html" id="link-inicio">
+                  <span class="nav-text">INICIO</span>
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-link-custom dropdown-toggle" href="pagina1.html" id="dropdownHistoria" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="nav-text">HISTORIA</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="dropdownHistoria">
+                  <li><a class="dropdown-item dropdown-item-custom" href="pagina1.html">Raíces de nuestro pueblo</a></li>
+                  <li><a class="dropdown-item dropdown-item-custom" href="pagina1.html#linea-de-tiempo">Historia de Ibicuy</a></li>
+                  <li><a class="dropdown-item dropdown-item-custom" href="pagina1.html#huellas-ferrocarril">Las huellas del ferrocarril</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-link-custom active dropdown-toggle" href="pagina2.html" id="dropdownNaturaleza" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="nav-text">NATURALEZA</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="dropdownNaturaleza">
+                  <li><a class="dropdown-item dropdown-item-custom active" href="pagina2.html">Un pueblo rodeado de agua y naturaleza</a></li>
+                  <li><a class="dropdown-item dropdown-item-custom" href="pagina2.html#vida-territorio">La vida del territorio</a></li>
+                  <li><a class="dropdown-item dropdown-item-custom" href="pagina2.html#conservacion">Conservación y cuidado</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-link-custom dropdown-toggle" href="pagina3.html" id="dropdownIbicuyHoy" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="nav-text">IBICUY HOY</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="dropdownIbicuyHoy">
+                  <li><a class="dropdown-item dropdown-item-custom" href="pagina3.html">Una identidad que sigue viva</a></li>
+                  <li><a class="dropdown-item dropdown-item-custom" href="pagina3.html#lugares">Lugares destacados</a></li>
+                  <li><a class="dropdown-item dropdown-item-custom" href="pagina3.html#cultura">Cultura y comunidad</a></li>
+                  <li><a class="dropdown-item dropdown-item-custom" href="pagina3.html#actividades">Actividades</a></li>
+                  <li><a class="dropdown-item dropdown-item-custom" href="pagina3.html#turista">Información para el turista</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="pagina4.html" id="link-contacto">
+                  <span class="nav-text">CONTACTO</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ==========================================================================
+         SECCIÓN 1: INTRO HERO CON MASCOTA EXPLORADORA
+         ========================================================================== -->
+    <section class="nature-hero-section">
+      <!-- Silueta botánica de juncos y humedal en el fondo -->
+      <div class="nature-hero-bg-reeds" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <!-- Columna izquierda: Título y descripción -->
+          <div class="col-lg-5 col-md-5">
+            <div class="nature-hero-content">
+              <h1 class="nature-hero-title">
+                Un pueblo rodeado de<br>
+                agua y naturaleza
+              </h1>
+              <p class="nature-hero-desc">
+                El territorio de Ibicuy está marcado por los cursos de agua, los ambientes ribereños, los humedales y un paisaje donde naturaleza y comunidad conviven.
+              </p>
+            </div>
+          </div>
+
+          <!-- Columna derecha: Mascota Cuis Explorador con globo de bienvenida -->
+          <div class="col-lg-7 col-md-7">
+            <div class="nature-mascot-box">
+              <img src="../imgs/globo_.png" alt="¡Hola! Soy Cuicito y voy a ser tu guía para descubrir Ibicuy." class="nature-speech-bubble">
+              <img src="../imgs/cuis_explorador.png" alt="Mascota cuis de Ibicuy con sombrero de explorador y binoculares" class="nature-mascot-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 2: BANNER PANORÁMICO (CARRUSEL DE PAISAJES)
+         ========================================================================== -->
+    <section class="nature-panoramic-section" id="paisaje">
+      <div id="carouselPanoramico" class="carousel slide carousel-fade nature-panoramic-box" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover">
+        <div class="carousel-inner h-100">
+          <!-- Foto 1: Búfalos -->
+          <div class="carousel-item active h-100">
+            <img src="../imgs/bufalos.png" alt="Grupo de búfalos pastando en el humedal verde de Ibicuy bajo cielo azul" class="nature-panoramic-img">
+            <div class="nature-panoramic-overlay"></div>
+            <p class="nature-panoramic-caption">
+              Imagen tomada desde el terraplén a un grupo de búfalos
+            </p>
+          </div>
+
+          <!-- Foto 2: Naturaleza -->
+          <div class="carousel-item h-100">
+            <img src="../imgs/naturaleza.jpg" alt="Paisaje natural y humedales característicos de Ibicuy" class="nature-panoramic-img">
+            <div class="nature-panoramic-overlay"></div>
+            <p class="nature-panoramic-caption">
+              Humedales y vegetación autóctona de las islas de Ibicuy
+            </p>
+          </div>
+
+          <!-- Foto 3: Misto -->
+          <div class="carousel-item h-100">
+            <img src="../imgs/misto.jpg" alt="Ave misto en los pastizales naturales de Ibicuy" class="nature-panoramic-img">
+            <div class="nature-panoramic-overlay"></div>
+            <p class="nature-panoramic-caption">
+              Misto, ave característica de los pastizales entrerrianos
+            </p>
+          </div>
+
+          <!-- Foto 4: Timbó -->
+          <div class="carousel-item h-100">
+            <img src="../imgs/timbo.jpeg" alt="Árbol timbó en el paisaje de las islas de Ibicuy" class="nature-panoramic-img">
+            <div class="nature-panoramic-overlay"></div>
+            <p class="nature-panoramic-caption">
+              Timbó en las costas y montes ribereños del Paraná
+            </p>
+          </div>
+
+          <!-- Foto 5: Vacas -->
+          <div class="carousel-item h-100">
+            <img src="../imgs/vacas.jpeg" alt="Ganadería en las islas y pasturas de Ibicuy" class="nature-panoramic-img">
+            <div class="nature-panoramic-overlay"></div>
+            <p class="nature-panoramic-caption">
+              Ganadería tradicional en los campos y costas de Ibicuy
+            </p>
+          </div>
+        </div>
+
+        <!-- Indicadores de carrusel / dots exactos al wireframe -->
+        <div class="carousel-indicators nature-panoramic-dots" role="tablist" aria-label="Indicadores de diapositivas">
+          <button type="button" data-bs-target="#carouselPanoramico" data-bs-slide-to="0" class="nature-panoramic-dot active" aria-current="true" aria-label="Foto 1: Búfalos"></button>
+          <button type="button" data-bs-target="#carouselPanoramico" data-bs-slide-to="1" class="nature-panoramic-dot" aria-label="Foto 2: Naturaleza"></button>
+          <button type="button" data-bs-target="#carouselPanoramico" data-bs-slide-to="2" class="nature-panoramic-dot" aria-label="Foto 3: Misto"></button>
+          <button type="button" data-bs-target="#carouselPanoramico" data-bs-slide-to="3" class="nature-panoramic-dot" aria-label="Foto 4: Timbó"></button>
+          <button type="button" data-bs-target="#carouselPanoramico" data-bs-slide-to="4" class="nature-panoramic-dot" aria-label="Foto 5: Vacas"></button>
+        </div>
+
+        <!-- Flechas de navegación anterior / siguiente -->
+        <button class="carousel-control-prev nature-carousel-ctrl" type="button" data-bs-target="#carouselPanoramico" data-bs-slide="prev" aria-label="Anterior">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next nature-carousel-ctrl" type="button" data-bs-target="#carouselPanoramico" data-bs-slide="next" aria-label="Siguiente">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 3: TICKER VERDE PETRÓLEO
+         ========================================================================== -->
+    <div class="nature-ticker-ribbon" role="region" aria-label="Conceptos naturales">
+      <div class="nature-ticker-track">
+        <div class="nature-ticker-content">
+          <span class="nature-ticker-text">· AGUA · VEGETACIÓN · ISLAS · MÉDANOS · HORIZONTE · AGUA · VEGETACIÓN · ISLAS · MÉDANOS · HORIZONTE · AGUA · VEGETACIÓN · ISLAS · MÉDANOS · HORIZONTE&nbsp;</span>
+        </div>
+        <div class="nature-ticker-content" aria-hidden="true">
+          <span class="nature-ticker-text">· AGUA · VEGETACIÓN · ISLAS · MÉDANOS · HORIZONTE · AGUA · VEGETACIÓN · ISLAS · MÉDANOS · HORIZONTE · AGUA · VEGETACIÓN · ISLAS · MÉDANOS · HORIZONTE&nbsp;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         SECCIÓN 4: LA VIDA DEL TERRITORIO (FLORA Y FAUNA)
+         ========================================================================== -->
+    <section class="territory-life-section" id="vida-territorio">
+      <div class="container">
+        <!-- Título y subtítulo -->
+        <h2 class="territory-life-title">La vida del territorio</h2>
+        <p class="territory-life-sub">
+          El paisaje está acompañado por una diversidad de ambientes que permiten la presencia de distintas especies de flora y fauna.
+        </p>
+
+        <!-- Grilla de 2 tarjetas: Flora y Fauna -->
+        <div class="row g-4 align-items-start">
+          <!-- Tarjeta 1: Flora -->
+          <div class="col-12 col-md-6">
+            <div class="territory-card-wrapper">
+              <article class="territory-card">
+                <img src="../imgs/flora.png" alt="Flores de ceibo y vegetación autóctona de los humedales de Ibicuy" class="territory-card-bg">
+                <div class="territory-card-overlay"></div>
+                <div class="territory-card-content">
+                  <div class="territory-card-texts">
+                    <h3 class="territory-card-title">Flora</h3>
+                    <p class="territory-card-desc">Vegetación autóctona de Ibicuy y sus humedales</p>
+                  </div>
+                  <button type="button" class="btn-territory-pill" data-bs-toggle="collapse" data-bs-target="#collapseFlora" aria-expanded="false" aria-controls="collapseFlora" id="btn-flora">
+                    <span class="btn-text">Conocer</span> <i class="bi bi-chevron-down territory-chevron"></i>
+                  </button>
+                </div>
+              </article>
+
+              <!-- Panel desplegable hacia abajo: Flora -->
+              <div class="collapse territory-collapse" id="collapseFlora">
+                <div class="territory-info-card">
+                  <div class="territory-info-header">
+                    <h4 class="territory-info-title">Flora de las islas y humedales</h4>
+                  </div>
+                  <p class="territory-info-desc">
+                    El delta del Ibicuy presenta una riquísima variedad botánica adaptada al pulso del agua. En las costas y albardones se desarrollan las características <strong>selvas en galería y montes blancos</strong>, donde predominan el <strong>ceibo</strong> (árbol y flor nacional), el <strong>sauce criollo</strong>, el <strong>aliso de río</strong>, el <strong>timbó</strong> y el <strong>curupí</strong>.
+                  </p>
+                  <p class="territory-info-desc">
+                    En las zonas bajas y anegadizas prosperan comunidades de <strong>juncos, espadañas, totoras y camalotales flotantes</strong>. Esta vegetación cumple una función ecológica fundamental: purifica y oxigena las aguas, fija los sedimentos isleños frente a las corrientes y provee refugio y sustento a toda la fauna regional.
+                  </p>
+                  <button type="button" class="territory-close-btn" data-bs-toggle="collapse" data-bs-target="#collapseFlora" aria-label="Cerrar panel de información de Flora">
+                    <i class="bi bi-chevron-up"></i> Cerrar información
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2: Fauna -->
+          <div class="col-12 col-md-6">
+            <div class="territory-card-wrapper">
+              <article class="territory-card">
+                <img src="../imgs/fauna.png" alt="Carpincho en la vegetación acuática de los esteros de Ibicuy" class="territory-card-bg">
+                <div class="territory-card-overlay"></div>
+                <div class="territory-card-content">
+                  <div class="territory-card-texts">
+                    <h3 class="territory-card-title">Fauna</h3>
+                    <p class="territory-card-desc">Diversidad de especies que habitan sus esteros, ríos y humedales</p>
+                  </div>
+                  <button type="button" class="btn-territory-pill" data-bs-toggle="collapse" data-bs-target="#collapseFauna" aria-expanded="false" aria-controls="collapseFauna" id="btn-fauna">
+                    <span class="btn-text">Conocer</span> <i class="bi bi-chevron-down territory-chevron"></i>
+                  </button>
+                </div>
+              </article>
+
+              <!-- Panel desplegable hacia abajo: Fauna -->
+              <div class="collapse territory-collapse" id="collapseFauna">
+                <div class="territory-info-card">
+                  <div class="territory-info-header">
+                    <h4 class="territory-info-title">Fauna autóctona del Delta</h4>
+                  </div>
+                  <p class="territory-info-desc">
+                    Los esteros, brazos de río y pastizales de Ibicuy constituyen un hábitat vital para numerosas especies. El <strong>carpincho</strong> es el gran protagonista de las riberas, conviviendo con <strong>coipos</strong> (nutrias de río), <strong>ciervos de los pantanos</strong> (declarados Monumento Natural), <strong>lobitos de río</strong> y el escurridizo <strong>cuis pampeano</strong>.
+                  </p>
+                  <p class="territory-info-desc">
+                    El cielo y los bañados están colmados de más de 200 especies de aves como <strong>garzas moras y blancas, chajás, mistos, martines pescadores y cisnes coscoroba</strong>. En las aguas confluyen peces nativos de enorme valor biológico y deportivo como el <strong>dorado, el surubí, el sábalo, la boga y la tararira</strong>.
+                  </p>
+                  <button type="button" class="territory-close-btn" data-bs-toggle="collapse" data-bs-target="#collapseFauna" aria-label="Cerrar panel de información de Fauna">
+                    <i class="bi bi-chevron-up"></i> Cerrar información
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 5: CONSERVACIÓN Y CUIDADO
+         ========================================================================== -->
+    <section class="conservation-section" id="conservacion">
+      <!-- Silueta botánica en la base de la sección -->
+      <div class="conservation-bg-reeds" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="conservation-card">
+          <div class="row align-items-center g-4 g-lg-5">
+            <!-- Columna izquierda: Textos de conservación -->
+            <div class="col-lg-5 col-md-6">
+              <h2 class="conservation-title">
+                Conservación y cuidado
+              </h2>
+              <p class="conservation-desc">
+                Los humedales y ambientes naturales forman parte de la identidad del territorio y requieren cuidado y conservación.
+              </p>
+            </div>
+
+            <!-- Columna derecha: Ave blanca alzando el vuelo sobre el agua -->
+            <div class="col-lg-7 col-md-6">
+              <div class="conservation-img-box">
+                <img src="../imgs/conservacion.png" alt="Ave autóctona coscoroba sobrevolando las aguas del humedal" class="conservation-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer class="site-footer" id="contacto">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <!-- Columna izquierda: Escudo y nombre oficial -->
+          <div class="col-lg-4 col-md-5">
+            <div class="footer-brand-box">
+              <img src="../imgs/logo_modelo_blanco.png" alt="Municipalidad de Ibicuy - Provincia de Entre Ríos" class="footer-logo-img">
+            </div>
+          </div>
+
+          <!-- Columna central: Enlaces de pie de página -->
+          <div class="col-lg-5 col-md-4 text-center">
+            <ul class="footer-nav-list">
+              <li><a href="../index.html" class="footer-nav-item">Inicio</a></li>
+              <li class="footer-nav-dot">·</li>
+              <li><a href="pagina1.html" class="footer-nav-item">Historia</a></li>
+              <li class="footer-nav-dot">·</li>
+              <li><a href="pagina2.html" class="footer-nav-item">Naturaleza</a></li>
+              <li class="footer-nav-dot">·</li>
+              <li><a href="pagina3.html" class="footer-nav-item">Ibicuy Hoy</a></li>
+              <li class="footer-nav-dot">·</li>
+              <li><a href="pagina4.html" class="footer-nav-item">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna derecha: Canales de contacto / redes sociales -->
+          <div class="col-lg-3 col-md-3">
+            <div class="footer-social-box">
+              <a href="tel:+543446000000" class="social-icon-btn" aria-label="Llamar a la municipalidad" title="Teléfono">
+                <i class="bi bi-telephone-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/municipiodeibicuy?srtk=MTJsdDR6NjltZG40OQ==" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram oficial" title="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/share/1FLqgSXv5c/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook oficial" title="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para efecto sutil de header y despliegue interactivo de tarjetas -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const header = document.querySelector('.site-header');
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 20) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        });
+
+        // Alternar texto del botón al desplegar / colapsar tarjetas de información
+        const territoryCollapses = document.querySelectorAll('.territory-collapse');
+        territoryCollapses.forEach(function (collapseEl) {
+          collapseEl.addEventListener('show.bs.collapse', function () {
+            const btn = document.querySelector(`[data-bs-target="#${this.id}"]`);
+            if (btn) {
+              const textSpan = btn.querySelector('.btn-text');
+              if (textSpan) textSpan.textContent = 'Cerrar';
+            }
+          });
+          collapseEl.addEventListener('hide.bs.collapse', function () {
+            const btn = document.querySelector(`[data-bs-target="#${this.id}"]`);
+            if (btn) {
+              const textSpan = btn.querySelector('.btn-text');
+              if (textSpan) textSpan.textContent = 'Conocer';
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

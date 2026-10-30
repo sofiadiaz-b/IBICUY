@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ibicuy Hoy - Comunidad, Cultura y Lugares Destacados | Ibicuy</title>
+  <meta name="description"
+    content="Una identidad que sigue viva. Ibicuy combina las huellas de su pasado ferroviario y portuario con los espacios, actividades y paisajes que forman parte de su vida actual.">
+
+  <!-- Favicons adaptados a todos los dispositivos y tamaños -->
+  <link rel="icon" type="image/png" href="../imgs/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../imgs/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../imgs/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="../imgs/android-chrome-512x512.png">
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!-- ==========================================================================
+         HEADER / NAVBAR
+         ========================================================================== -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <!-- Logo oficial de Municipio de Ibicuy -->
+        <a class="navbar-brand brand-wrapper" href="../index.html" id="nav-brand">
+          <img src="../imgs/logo_modelo_gris.png" alt="Municipio de Ibicuy - Provincia de Entre Ríos"
+            class="site-header-logo">
+        </a>
+
+        <!-- Botón hamburguesa para responsive -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarIbicuy" aria-controls="navbarIbicuy" aria-expanded="false"
+          aria-label="Abrir navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarIbicuy">
+          <ul class="navbar-nav align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="../index.html" id="link-inicio">
+                <span class="nav-text">INICIO</span>
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-link-custom dropdown-toggle" href="pagina1.html" id="dropdownHistoria"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="nav-text">HISTORIA</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="dropdownHistoria">
+                <li><a class="dropdown-item dropdown-item-custom" href="pagina1.html">Raíces de nuestro pueblo</a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="pagina1.html#linea-de-tiempo">Historia de
+                    Ibicuy</a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="pagina1.html#huellas-ferrocarril">Las huellas
+                    del ferrocarril</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-link-custom dropdown-toggle" href="pagina2.html" id="dropdownNaturaleza"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="nav-text">NATURALEZA</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="dropdownNaturaleza">
+                <li><a class="dropdown-item dropdown-item-custom" href="pagina2.html">Un pueblo rodeado de agua y
+                    naturaleza</a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="pagina2.html#vida-territorio">La vida del
+                    territorio</a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="pagina2.html#conservacion">Conservación y
+                    cuidado</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-link-custom active dropdown-toggle" href="pagina3.html" id="dropdownIbicuyHoy"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="nav-text">IBICUY HOY</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="dropdownIbicuyHoy">
+                <li><a class="dropdown-item dropdown-item-custom active" href="pagina3.html">Una identidad que sigue
+                    viva</a>
+                </li>
+                <li><a class="dropdown-item dropdown-item-custom" href="pagina3.html#lugares">Lugares destacados</a>
+                </li>
+                <li><a class="dropdown-item dropdown-item-custom" href="pagina3.html#cultura">Cultura y comunidad</a>
+                </li>
+                <li><a class="dropdown-item dropdown-item-custom" href="pagina3.html#actividades">Actividades</a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="pagina3.html#turista">Información para el
+                    turista</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="pagina4.html" id="link-contacto">
+                <span class="nav-text">CONTACTO</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================================================
+         SECCIÓN 1: HERO / BANNER IBICUY HOY
+         ========================================================================== -->
+  <section class="today-hero-section">
+    <div class="container">
+      <div class="today-hero-card">
+        <div class="row g-0 align-items-stretch">
+          <!-- Bloque de texto verde petróleo -->
+          <div class="col-lg-5 col-md-6 d-flex align-items-center">
+            <div class="today-hero-content">
+              <h1 class="today-hero-title">
+                Una identidad <br>
+                que sigue viva
+              </h1>
+              <p class="today-hero-desc">
+                Ibicuy combina las huellas de su pasado ferroviario y portuario con los espacios, actividades y paisajes
+                que forman parte de su vida actual.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bloque de imagen fotográfica de la comunidad -->
+          <div class="col-lg-7 col-md-6">
+            <div class="today-hero-img-box">
+              <img src="../imgs/actividades.png"
+                alt="Personas y visitantes recorriendo la estructura portuaria de Ibicuy" class="today-hero-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+         SECCIÓN 2: LUGARES DESTACADOS (CARRUSEL DE 2 GRUPOS DE 3 TARJETAS)
+         ========================================================================== -->
+  <section class="places-section" id="lugares">
+    <div class="container">
+      <!-- Título de sección -->
+      <div class="places-header">
+        <h2 class="places-title">Lugares destacados</h2>
+      </div>
+
+      <!-- Contenedor del Carrusel de Bootstrap -->
+      <div id="carouselLugares" class="carousel slide places-carousel" data-bs-ride="carousel" data-bs-touch="true">
+        <div class="places-carousel-wrapper">
+
+          <!-- Flecha izquierda -->
+          <button class="places-nav-btn" type="button" data-bs-target="#carouselLugares" data-bs-slide="prev"
+            aria-label="Anterior grupo de lugares">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+
+          <!-- Interior del carrusel con 2 diapositivas (slides) -->
+          <div class="carousel-inner flex-grow-1">
+
+            <!-- SLIDE 1: PRIMEROS 3 LUGARES -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <!-- Tarjeta 1: Holt Estación -->
+                <div class="col-12 col-md-4">
+                  <article class="place-card">
+                    <img src="../imgs/holt_estacion.png" alt="Estación Holt en Ibicuy" class="place-card-bg">
+                    <div class="place-card-overlay"></div>
+                    <div class="place-card-content">
+                      <h3 class="place-card-title">Holt Estación</h3>
+                      <a href="#turista" class="btn-place-pill">
+                        VER MÁS <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Tarjeta 2: Vagón Histórico -->
+                <div class="col-12 col-md-4">
+                  <article class="place-card">
+                    <img src="../imgs/vagon_historico.jpeg" alt="Antiguo vagón de tren de madera" class="place-card-bg">
+                    <div class="place-card-overlay"></div>
+                    <div class="place-card-content">
+                      <h3 class="place-card-title">Vagón Histórico</h3>
+                      <a href="#turista" class="btn-place-pill">
+                        VER MÁS <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Tarjeta 3: Camino de Los Ceibos -->
+                <div class="col-12 col-md-4">
+                  <article class="place-card">
+                    <img src="../imgs/camino_de_los_ceibos.jpeg" alt="Camino de Los Ceibos de Ibicuy"
+                      class="place-card-bg">
+                    <div class="place-card-overlay"></div>
+                    <div class="place-card-content">
+                      <h3 class="place-card-title">Camino de Los Ceibos</h3>
+                      <a href="#turista" class="btn-place-pill">
+                        VER MÁS <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 2: SIGUIENTES 3 LUGARES NUEVOS -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <!-- Tarjeta 4: Cruz Mayor -->
+                <div class="col-12 col-md-4">
+                  <article class="place-card">
+                    <img src="../imgs/cruz_mayor.jpeg" alt="Monumento Cruz Mayor" class="place-card-bg">
+                    <div class="place-card-overlay"></div>
+                    <div class="place-card-content">
+                      <h3 class="place-card-title">Cruz Mayor</h3>
+                      <a href="#turista" class="btn-place-pill">
+                        VER MÁS <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Tarjeta 5: Plaza San Martín -->
+                <div class="col-12 col-md-4">
+                  <article class="place-card">
+                    <img src="../imgs/plaza_san martin.png" alt="Paseo bicicletas en Plaza San Martín"
+                      class="place-card-bg">
+                    <div class="place-card-overlay"></div>
+                    <div class="place-card-content">
+                      <h3 class="place-card-title">Plaza San Martín</h3>
+                      <a href="#turista" class="btn-place-pill">
+                        VER MÁS <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Tarjeta 6: Costanera y Río -->
+                <div class="col-12 col-md-4">
+                  <article class="place-card">
+                    <img src="../imgs/costanera_puerto_ibicuy.jpeg" alt="Paseo de la costanera de Ibicuy"
+                      class="place-card-bg">
+                    <div class="place-card-overlay"></div>
+                    <div class="place-card-content">
+                      <h3 class="place-card-title">Costanera del Puerto Ibicuy</h3>
+                      <a href="#turista" class="btn-place-pill">
+                        VER MÁS <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Flecha derecha -->
+          <button class="places-nav-btn" type="button" data-bs-target="#carouselLugares" data-bs-slide="next"
+            aria-label="Siguiente grupo de lugares">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+         SECCIÓN 3: CULTURA Y COMUNIDAD (AFICHE FIESTA)
+         ========================================================================== -->
+  <section class="culture-section" id="cultura">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        <!-- Columna izquierda: Afiche ilustrado de la fiesta -->
+        <div class="col-lg-6">
+          <div class="culture-poster-box">
+            <img src="../imgs/fiesta.png" alt="Afiche ilustrado oficial Fiesta de Ibicuy 12, 13 y 14 de Noviembre"
+              class="culture-poster-img">
+          </div>
+        </div>
+
+        <!-- Columna derecha: Título, descripción y acordeón interactivo -->
+        <div class="col-lg-6">
+          <h2 class="culture-title">Cultura y comunidad</h2>
+          <p class="culture-desc">
+            Conocé las actividades, celebraciones y propuestas que mantienen viva la identidad y las tradiciones de
+            Ibicuy.
+          </p>
+
+          <div class="culture-accordion-list" id="accordionCultura">
+            <!-- Item 1 -->
+            <div class="culture-accordion-item">
+              <button class="culture-accordion-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseEventos" aria-expanded="false" aria-controls="collapseEventos">
+                <span>Próximos eventos y celebraciones</span>
+                <i class="bi bi-chevron-down culture-accordion-arrow"></i>
+              </button>
+              <div id="collapseEventos" class="collapse" data-bs-parent="#accordionCultura">
+                <p class="culture-accordion-body">
+                  La Fiesta de Ibicuy reúne a la comunidad para celebrar el aniversario del pueblo, con espectáculos
+                  musicales, feria de artesanos y propuestas gastronómicas en el Escenario Mayor y la Plaza San Martín.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="culture-accordion-item">
+              <button class="culture-accordion-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseCulturales" aria-expanded="false" aria-controls="collapseCulturales">
+                <span>Actividades culturales</span>
+                <i class="bi bi-chevron-down culture-accordion-arrow"></i>
+              </button>
+              <div id="collapseCulturales" class="collapse" data-bs-parent="#accordionCultura">
+                <p class="culture-accordion-body">
+                  Talleres de danzas tradicionales, muestras fotográficas que rescatan la historia del ferrocarril,
+                  espacios de lectura y otras propuestas que promueven la cultura y las tradiciones locales.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="culture-accordion-item">
+              <button class="culture-accordion-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseComunidad" aria-expanded="false" aria-controls="collapseComunidad">
+                <span>Propuestas para la comunidad</span>
+                <i class="bi bi-chevron-down culture-accordion-arrow"></i>
+              </button>
+              <div id="collapseComunidad" class="collapse" data-bs-parent="#accordionCultura">
+                <p class="culture-accordion-body">
+                  Espacios deportivos, senderos para descubrir la naturaleza de Ibicuy y actividades recreativas en
+                  distintos lugares del pueblo, que invitan a compartir y disfrutar de la vida al aire libre.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+         SECCIÓN 4: ACTIVIDADES
+         ========================================================================== -->
+  <section class="activities-section" id="actividades">
+    <div class="container">
+      <h2 class="activities-title">Actividades</h2>
+      <p class="activities-sub">
+        El vínculo con el agua y los espacios naturales nos permite encontrar distintas actividades al aire libre.
+      </p>
+
+      <!-- Grilla de 4 tarjetas -->
+      <div class="row g-3 g-lg-4">
+        <!-- Tarjeta 1: Pesca -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="activity-card">
+            <img src="../imgs/pesca.png" alt="Pesca deportiva y recreativa en Ibicuy" class="activity-card-bg">
+            <div class="activity-card-overlay"></div>
+            <div class="activity-card-content">
+              <h3 class="activity-card-title">Pesca</h3>
+              <span class="activity-card-btn" aria-hidden="true">
+                <i class="bi bi-arrow-right"></i>
+              </span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Tarjeta 2: Kayak -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="activity-card">
+            <img src="../imgs/kayak.png" alt="Navegación en kayak por los arroyos y río" class="activity-card-bg">
+            <div class="activity-card-overlay"></div>
+            <div class="activity-card-content">
+              <h3 class="activity-card-title">Kayak</h3>
+              <span class="activity-card-btn" aria-hidden="true">
+                <i class="bi bi-arrow-right"></i>
+              </span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Tarjeta 3: Paseos -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="activity-card">
+            <img src="../imgs/paseos.png" alt="Paseos náuticos y senderismo en la costa" class="activity-card-bg">
+            <div class="activity-card-overlay"></div>
+            <div class="activity-card-content">
+              <h3 class="activity-card-title">Paseos</h3>
+              <span class="activity-card-btn" aria-hidden="true">
+                <i class="bi bi-arrow-right"></i>
+              </span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Tarjeta 4: Aire libre -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="activity-card">
+            <img src="../imgs/bicicletas.png" alt="Paseos en bicicleta y actividades al aire libre"
+              class="activity-card-bg">
+            <div class="activity-card-overlay"></div>
+            <div class="activity-card-content">
+              <h3 class="activity-card-title">Aire libre</h3>
+              <span class="activity-card-btn" aria-hidden="true">
+                <i class="bi bi-arrow-right"></i>
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+         SECCIÓN 5: INFORMACIÓN PARA EL TURISTA (CON MASCOTA PESCADORA)
+         ========================================================================== -->
+  <section class="tourist-section" id="turista">
+    <div class="container">
+      <div class="tourist-card">
+        <div class="row align-items-center g-4 g-lg-5">
+          <!-- Columna izquierda: Información y llamado a la acción -->
+          <div class="col-lg-7 col-md-7">
+            <h2 class="tourist-title">
+              Información para el turista
+            </h2>
+            <p class="tourist-subtitle">
+              Todo lo que necesitás saber para visitar Ibicuy
+            </p>
+            <p class="tourist-desc">
+              Encontrá cómo llegar, dónde estamos y toda la información que necesitás para conocer la localidad.
+            </p>
+            <a href="../html/pagina4.html" class="btn-tourist-pill" id="btn-quiero-saber-mas">
+              QUIERO SABER MÁS <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Columna derecha: Mascota Cuicito pescador que sobresale de la tarjeta -->
+          <div class="col-lg-5 col-md-5">
+            <div class="tourist-mascot-box">
+              <img src="../imgs/cuis_pescador.png" alt="Cuicito pescador, guía turístico de Ibicuy"
+                class="tourist-mascot-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+  <footer class="site-footer" id="contacto">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <!-- Columna izquierda: Escudo y nombre oficial -->
+        <div class="col-lg-4 col-md-5">
+          <div class="footer-brand-box">
+            <img src="../imgs/logo_modelo_blanco.png" alt="Municipalidad de Ibicuy - Provincia de Entre Ríos"
+              class="footer-logo-img">
+          </div>
+        </div>
+
+        <!-- Columna central: Enlaces de pie de página -->
+        <div class="col-lg-5 col-md-4 text-center">
+          <ul class="footer-nav-list">
+            <li><a href="../index.html" class="footer-nav-item">Inicio</a></li>
+            <li class="footer-nav-dot">·</li>
+            <li><a href="pagina1.html" class="footer-nav-item">Historia</a></li>
+            <li class="footer-nav-dot">·</li>
+            <li><a href="pagina2.html" class="footer-nav-item">Naturaleza</a></li>
+            <li class="footer-nav-dot">·</li>
+            <li><a href="pagina3.html" class="footer-nav-item">Ibicuy Hoy</a></li>
+            <li class="footer-nav-dot">·</li>
+            <li><a href="pagina4.html" class="footer-nav-item">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna derecha: Canales de contacto / redes sociales -->
+        <div class="col-lg-3 col-md-3">
+          <div class="footer-social-box">
+            <a href="tel:+543446000000" class="social-icon-btn" aria-label="Llamar a la municipalidad" title="Teléfono">
+              <i class="bi bi-telephone-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/municipiodeibicuy?srtk=MTJsdDR6NjltZG40OQ==" target="_blank"
+              rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram oficial" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1FLqgSXv5c/" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" aria-label="Facebook oficial" title="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para efecto sutil de header al scrollear -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const header = document.querySelector('.site-header');
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 20) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
