@@ -179,45 +179,50 @@
           <div class="contact-form-wrapper">
             <!-- Tarjeta de formulario -->
             <div class="contact-form-card">
-              <form id="contactForm" onsubmit="event.preventDefault(); showContactSuccess();">
-                <!-- Campo 1: Nombre -->
-                <div class="contact-field-group">
-                  <label for="nombre" class="contact-form-label">Nombre</label>
-                  <input type="text" id="nombre" name="nombre" class="contact-form-control" required autocomplete="name"
-                    placeholder="">
+              
+              <form id="contactForm" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <!-- Identificación del formulario para Netlify -->
+                <input type="hidden" name="form-name" value="contacto">
+              
+                <!-- Campo oculto de protección antispam -->
+                <div hidden>
+                  <label>
+                    No completar este campo:
+                    <input name="bot-field">
+                  </label>
                 </div>
-
+              
+                <!-- Campo 1: Nombre y apellido -->
+                <div class="contact-field-group">
+                  <label for="nombre" class="contact-form-label form-label">Nombre y apellido</label>
+                  <input type="text" id="nombre" name="nombre" class="contact-form-control form-control" required minlength="3" autocomplete="name" placeholder="">
+                </div>
+              
                 <!-- Campo 2: Correo electrónico -->
                 <div class="contact-field-group">
-                  <label for="email" class="contact-form-label">Correo electrónico</label>
-                  <input type="email" id="email" name="email" class="contact-form-control" required autocomplete="email"
-                    placeholder="">
+                  <label for="email" class="contact-form-label form-label">Correo electrónico</label>
+                  <input type="email" id="email" name="email" class="contact-form-control form-control" required autocomplete="email"placeholder="">
                 </div>
-
+              
                 <!-- Campo 3: Asunto -->
                 <div class="contact-field-group">
-                  <label for="asunto" class="contact-form-label">Asunto</label>
-                  <input type="text" id="asunto" name="asunto" class="contact-form-control" required placeholder="">
+                  <label for="asunto" class="contact-form-label form-label">Asunto</label>
+                  <input type="text" id="asunto" name="asunto" class="contact-form-control form-control" required minlength="3" placeholder="">
                 </div>
-
+              
                 <!-- Campo 4: Mensaje -->
                 <div class="contact-field-group">
-                  <label for="mensaje" class="contact-form-label">Mensaje</label>
-                  <textarea id="mensaje" name="mensaje" class="contact-form-control" rows="4" required
-                    placeholder=""></textarea>
+                  <label for="mensaje" class="contact-form-label form-label">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje" class="contact-form-control form-control" rows="4" required minlength="10" placeholder=""></textarea>
                 </div>
-
-                <!-- Botón de envío alineado a la derecha -->
+              
+                <!-- Botón de envío -->
                 <div class="contact-btn-row">
-                  <button type="submit" class="btn-contact-submit" id="btn-enviar-contacto">
+                  <button type="submit" class="btn btn-contact-submit" id="btn-enviar-contacto">
                     ENVIAR <i class="bi bi-arrow-right"></i>
                   </button>
                 </div>
-
-                <!-- Mensaje de confirmación accesible al enviar -->
-                <div id="contactFeedback" class="contact-feedback-msg d-none" role="alert"></div>
               </form>
-            </div>
 
             <!-- Mascota Cuicito turista y globo de bienvenida centrados por debajo del formulario -->
             <div class="contact-mascot-combo">
@@ -367,32 +372,6 @@
         }
       });
     });
-
-    function showContactSuccess() {
-      const btn = document.getElementById('btn-enviar-contacto');
-      const feedback = document.getElementById('contactFeedback');
-      const form = document.getElementById('contactForm');
-      const originalContent = btn.innerHTML;
-
-      btn.disabled = true;
-      btn.innerHTML = '<i class="bi bi-check2-circle"></i> ¡ENVIADO!';
-      btn.classList.add('btn-success-state');
-
-      if (feedback) {
-        feedback.innerHTML = '<i class="bi bi-check-circle-fill"></i> ¡Muchas gracias! Tu mensaje ha sido enviado correctamente.';
-        feedback.classList.remove('d-none');
-      }
-
-      setTimeout(() => {
-        btn.disabled = false;
-        btn.innerHTML = originalContent;
-        btn.classList.remove('btn-success-state');
-        if (feedback) {
-          feedback.classList.add('d-none');
-        }
-        form.reset();
-      }, 4000);
-    }
   </script>
 </body>
 
