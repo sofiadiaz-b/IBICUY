@@ -215,6 +215,24 @@
                   <label for="mensaje" class="contact-form-label form-label">Mensaje</label>
                   <textarea id="mensaje" name="mensaje" class="contact-form-control form-control" rows="4" required minlength="10" placeholder=""></textarea>
                 </div>
+
+                <!-- Campo 5: Cargar archivo -->
+                <div class="contact-field-group">
+                  <label for="archivo" class="contact-form-label">Cargar archivo</label>
+                  <div class="contact-file-box">
+                    <input type="file" id="archivo" name="archivo" class="visually-hidden"
+                      accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                    <label for="archivo" class="contact-file-label-pill" id="fileDropZone">
+                      <span class="btn-file-pill"><i class="bi bi-paperclip"></i> Adjuntar</span>
+                      <span class="file-name-text" id="fileNameDisplay">Ningún archivo seleccionado</span>
+                      <button type="button" class="btn-file-clear d-none" id="btnFileClear" title="Quitar archivo"
+                        aria-label="Quitar archivo">
+                        <i class="bi bi-x-circle-fill"></i>
+                      </button>
+                    </label>
+                  </div>
+                  <span class="contact-file-hint">Formatos permitidos: PDF, DOC, DOCX, JPG o PNG (máx. 10 MB)</span>
+                </div>
               
                 <!-- Botón de envío -->
                 <div class="contact-btn-row">
