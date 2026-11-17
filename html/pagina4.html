@@ -180,7 +180,7 @@
             <!-- Tarjeta de formulario -->
             <div class="contact-form-card">
               
-              <form id="contactForm" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <form id="contactForm" name="contacto" method="POST" enctype="multipart/form-data" onsubmit="event.preventDefault(); showContactSuccess();" data-netlify="true" netlify-honeypot="bot-field">
                 <!-- Identificación del formulario para Netlify -->
                 <input type="hidden" name="form-name" value="contacto">
               
