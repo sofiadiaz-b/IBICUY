@@ -180,7 +180,7 @@
             <!-- Tarjeta de formulario -->
             <div class="contact-form-card">
               
-              <form id="contactForm" name="contacto" method="POST" enctype="multipart/form-data" onsubmit="event.preventDefault(); showContactSuccess();" data-netlify="true" netlify-honeypot="bot-field">
+              <form id="contactForm" name="contacto" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">                
                 <!-- Identificación del formulario para Netlify -->
                 <input type="hidden" name="form-name" value="contacto">
               
@@ -231,8 +231,8 @@
                       </button>
                     </label>
                   </div>
-                  <span class="contact-file-hint">Formatos permitidos: PDF, DOC, DOCX, JPG o PNG (máx. 10 MB)</span>
-                </div>
+                  <span class="contact-file-hint">Formatos permitidos: PDF, DOC, DOCX, JPG o PNG (máx. 8 MB)</span>                
+                  </div>
               
                 <!-- Botón de envío -->
                 <div class="contact-btn-row">
@@ -375,116 +375,97 @@
     </div>
   </footer>
 
-  <!-- Bootstrap 5.3 Bundle JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+<!-- Bootstrap 5.3 Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Script de interacción:  Header scroll y Campo de carga de archivo -->
-  <script> -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const header = document.querySelector('.site-header');
-      window.addEventListener('scroll', function () {
-        if (window.scrollY > 20) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
-      });
+<!-- Script de interacción: Header scroll y carga de archivo -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // Header scroll
+    const header = document.querySelector('.site-header');
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 20) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
     });
 
-      // Gestión interactiva del Campo 5: Cargar archivo
-      const fileInput = document.getElementById('archivo');
-      const fileNameDisplay = document.getElementById('fileNameDisplay');
-      const btnFileClear = document.getElementById('btnFileClear');
-      const dropZone = document.getElementById('fileDropZone');
+    // Gestión del campo de carga de archivo
+    const fileInput = document.getElementById('archivo');
+    const fileNameDisplay = document.getElementById('fileNameDisplay');
+    const btnFileClear = document.getElementById('btnFileClear');
+    const dropZone = document.getElementById('fileDropZone');
 
-      if (fileInput && fileNameDisplay) {
-        fileInput.addEventListener('change', function () {
-          if (this.files && this.files.length > 0) {
-            fileNameDisplay.textContent = this.files[0].name;
-            fileNameDisplay.classList.add('file-selected');
-            if (btnFileClear) btnFileClear.classList.remove('d-none');
-          } else {
-            fileNameDisplay.textContent = 'Ningún archivo seleccionado';
-            fileNameDisplay.classList.remove('file-selected');
-            if (btnFileClear) btnFileClear.classList.add('d-none');
+    if (fileInput && fileNameDisplay) {
+
+      // Mostrar el nombre del archivo seleccionado
+      fileInput.addEventListener('change', function () {
+        if (this.files && this.files.length > 0) {
+          fileNameDisplay.textContent = this.files[0].name;
+          fileNameDisplay.classList.add('file-selected');
+
+          if (btnFileClear) {
+            btnFileClear.classList.remove('d-none');
           }
-        });
-
-        // Botón para quitar el archivo seleccionado
-        if (btnFileClear) {
-          btnFileClear.addEventListener('click', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            fileInput.value = '';
-            fileNameDisplay.textContent = 'Ningún archivo seleccionado';
-            fileNameDisplay.classList.remove('file-selected');
-            btnFileClear.classList.add('d-none');
-          });
-        }
-
-        // Soporte para arrastrar y soltar archivo sobre el campo
-        if (dropZone) {
-          ['dragenter', 'dragover'].forEach(function (eventName) {
-            dropZone.addEventListener(eventName, function (e) {
-              e.preventDefault();
-              dropZone.classList.add('drag-over');
-            });
-          });
-
-          ['dragleave', 'drop'].forEach(function (eventName) {
-            dropZone.addEventListener(eventName, function (e) {
-              e.preventDefault();
-              dropZone.classList.remove('drag-over');
-            });
-          });
-
-          dropZone.addEventListener('drop', function (e) {
-            if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-              fileInput.files = e.dataTransfer.files;
-              fileNameDisplay.textContent = e.dataTransfer.files[0].name;
-              fileNameDisplay.classList.add('file-selected');
-              if (btnFileClear) btnFileClear.classList.remove('d-none');
-            }
-          });
-        }
-      }
-    });
-function showContactSuccess() {
-      const btn = document.getElementById('btn-enviar-contacto');
-      const feedback = document.getElementById('contactFeedback');
-      const form = document.getElementById('contactForm');
-      const fileNameDisplay = document.getElementById('fileNameDisplay');
-      const btnFileClear = document.getElementById('btnFileClear');
-      const originalContent = btn.innerHTML;
-
-      btn.disabled = true;
-      btn.innerHTML = '<i class="bi bi-check2-circle"></i> ¡ENVIADO!';
-      btn.classList.add('btn-success-state');
-
-      if (feedback) {
-        feedback.innerHTML = '<i class="bi bi-check-circle-fill"></i> ¡Muchas gracias! Tu mensaje ha sido enviado correctamente.';
-        feedback.classList.remove('d-none');
-      }
-
-      setTimeout(() => {
-        btn.disabled = false;
-        btn.innerHTML = originalContent;
-        btn.classList.remove('btn-success-state');
-        if (feedback) {
-          feedback.classList.add('d-none');
-        }
-        form.reset();
-        if (fileNameDisplay) {
+        } else {
           fileNameDisplay.textContent = 'Ningún archivo seleccionado';
           fileNameDisplay.classList.remove('file-selected');
-        }
-        if (btnFileClear) {
-          btnFileClear.classList.add('d-none');
-        }
-      }, 4000);
-    }
-  </script>
-</body>
 
+          if (btnFileClear) {
+            btnFileClear.classList.add('d-none');
+          }
+        }
+      });
+
+      // Botón para quitar el archivo seleccionado
+      if (btnFileClear) {
+        btnFileClear.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          fileInput.value = '';
+          fileNameDisplay.textContent = 'Ningún archivo seleccionado';
+          fileNameDisplay.classList.remove('file-selected');
+          btnFileClear.classList.add('d-none');
+        });
+      }
+
+      // Soporte para arrastrar y soltar archivos
+      if (dropZone) {
+
+        ['dragenter', 'dragover'].forEach(function (eventName) {
+          dropZone.addEventListener(eventName, function (e) {
+            e.preventDefault();
+            dropZone.classList.add('drag-over');
+          });
+        });
+
+        ['dragleave', 'drop'].forEach(function (eventName) {
+          dropZone.addEventListener(eventName, function (e) {
+            e.preventDefault();
+            dropZone.classList.remove('drag-over');
+          });
+        });
+
+        dropZone.addEventListener('drop', function (e) {
+          if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+            fileInput.files = e.dataTransfer.files;
+
+            fileNameDisplay.textContent = e.dataTransfer.files[0].name;
+            fileNameDisplay.classList.add('file-selected');
+
+            if (btnFileClear) {
+              btnFileClear.classList.remove('d-none');
+            }
+          }
+        });
+      }
+    }
+  });
+</script>
+</body>
 </html>
